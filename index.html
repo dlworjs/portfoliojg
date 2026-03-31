@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | 성장의 항로를 설계하는 개발자</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- HEADER: 시맨틱 내비게이션 -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
+                Portfolio
+            </h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8 font-medium text-slate-600">
+                    <li><a href="#about" class="hover:text-indigo-600 transition-colors">소개</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-600 transition-colors">프로젝트</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-600 transition-colors">연락처</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="mailto:dlworjs21@naver.com" class="p-2 rounded-full hover:bg-slate-100 transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: 첫 인상 -->
+        <section class="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block p-2 px-4 rounded-full bg-indigo-50 text-indigo-600 font-semibold mb-6 text-sm">
+                    사람과 성장을 잇는 하이브리드 개발자
+                </div>
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
+                    기술의 본질을 탐구하며 <br /><span class="text-indigo-600">의미 있는 성장을 하는</span><br />
+                    이재건의 작업공간입니다.
+                </h2>
+                <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    사용자에게 실질적인 변화를 선사하는 기술의 가치를 깊이 있게 연구합니다.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects"
+                        class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200">
+                        작업물 보기
+                    </a>
+                    <a href="#contact"
+                        class="bg-white border border-slate-200 px-8 py-3 rounded-xl font-bold hover:bg-slate-50 transition-all">
+                        협업 제안
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION: 전문성 강조 -->
+        <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000">
+                        </div>
+                        <div class="relative bg-white rounded-3xl p-10 border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-4 mb-6">
+                                <div class="bg-indigo-100 p-3 rounded-2xl text-indigo-600">
+                                    <i data-lucide="user" class="w-8 h-8"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold">이재건 (Lee Jaegeon)</h3>
+                                    <p class="text-sm text-indigo-500 font-semibold uppercase tracking-wider">Solution
+                                        Architect</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                                AI의 속도보다 중요한 것은 나만의 체득입니다. 서둘러 앞서가기보다 느리더라도 스스로 배우며 걷는 천천한 길이,
+                                결국 시간이 흐른 뒤 나를 가장 단단하고 크게 성장시키는 유일한 지름길이 됩니다.
+                            </p>
+                            <div class="flex gap-4 border-t pt-6 border-slate-100">
+                                <div class="flex items-center text-sm text-slate-500">
+                                    <i data-lucide="award" class="w-4 h-4 mr-1 text-yellow-500"></i> Expert Insight
+                                </div>
+                                <div class="flex items-center text-sm text-slate-500">
+                                    <i data-lucide="users" class="w-4 h-4 mr-1 text-green-500"></i> Coaching Mind
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+                    <div
+                        class="p-5 bg-white border border-slate-100 rounded-2xl flex items-center space-x-3 hover:border-indigo-200 hover:shadow-md transition-all">
+                        <i data-lucide="code" class="w-5 h-5 text-indigo-400"></i>
+                        <span class="font-semibold text-slate-700 italic text-sm md:text-base">React</span>
+                    </div>
+                    <div
+                        class="p-5 bg-white border border-slate-100 rounded-2xl flex items-center space-x-3 hover:border-indigo-200 hover:shadow-md transition-all">
+                        <i data-lucide="code" class="w-5 h-5 text-indigo-400"></i>
+                        <span class="font-semibold text-slate-700 italic text-sm md:text-base">Node.js</span>
+                    </div>
+                    <div
+                        class="p-5 bg-white border border-slate-100 rounded-2xl flex items-center space-x-3 hover:border-indigo-200 hover:shadow-md transition-all">
+                        <i data-lucide="code" class="w-5 h-5 text-indigo-400"></i>
+                        <span class="font-semibold text-slate-700 italic text-sm md:text-base">Python</span>
+                    </div>
+                    <div
+                        class="p-5 bg-white border border-slate-100 rounded-2xl flex items-center space-x-3 hover:border-indigo-200 hover:shadow-md transition-all">
+                        <i data-lucide="code" class="w-5 h-5 text-indigo-400"></i>
+                        <span class="font-semibold text-slate-700 italic text-sm md:text-base">UX/UI</span>
+                    </div>
+                    <div
+                        class="p-5 bg-white border border-slate-100 rounded-2xl flex items-center space-x-3 hover:border-indigo-200 hover:shadow-md transition-all">
+                        <i data-lucide="code" class="w-5 h-5 text-indigo-400"></i>
+                        <span class="font-semibold text-slate-700 italic text-sm md:text-base">frontend</span>
+                    </div>
+                    <div
+                        class="p-5 bg-white border border-slate-100 rounded-2xl flex items-center space-x-3 hover:border-indigo-200 hover:shadow-md transition-all">
+                        <i data-lucide="code" class="w-5 h-5 text-indigo-400"></i>
+                        <span class="font-semibold text-slate-700 italic text-sm md:text-base">backend</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION: 포트폴리오 핵심 (Article 태그 활용) -->
+        <section id="projects" class="py-24 px-4 bg-slate-100/50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-bold mb-4">Portfolio Highlights</h3>
+                    <p class="text-slate-500 max-w-xl mx-auto">
+                        심리 케어부터 전문 교육 플랫폼까지, 이재건의 구축한 하이브리드 생태계입니다.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Project 1: 마음토닥 -->
+                    <article
+                        class="project-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-slate-200 flex flex-col group">
+                        <div class="p-10 flex-grow">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="p-4 bg-pink-50 rounded-2xl group-hover:bg-pink-100 transition-colors">
+                                    <i data-lucide="heart" class="w-7 h-7 text-pink-500"></i>
+                                </div>
+                                <span class="px-3 py-1 bg-pink-50 text-pink-600 text-xs font-bold rounded-lg">Mental
+                                    Care</span>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4 group-hover:text-pink-600 transition-colors">마음토닥 (Heart
+                                Patting)</h4>
+                            <p class="text-slate-600 mb-8 leading-relaxed">감정을 기록하고 마음의 안정을 돕는 심리 케어 플랫폼입니다. 사용자 친화적인
+                                인터페이스로 정서적 지지를 제공합니다. <br /> chat_new 활용 쿠폰 : testCoupon</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#React</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#EmotionalUI</span>
+                            </div>
+                        </div>
+                        <div
+                            class="px-10 py-6 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                            <a href="https://heart-patting.netlify.app/" target="_blank"
+                                class="text-indigo-600 font-bold flex items-center hover:underline text-sm">
+                                서비스 방문 <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: 오늘 뭐 먹지 -->
+                    <article
+                        class="project-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-slate-200 flex flex-col group">
+                        <div class="p-10 flex-grow">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="p-4 bg-orange-50 rounded-2xl group-hover:bg-orange-100 transition-colors">
+                                    <i data-lucide="utensils" class="w-7 h-7 text-orange-500"></i>
+                                </div>
+                                <span
+                                    class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-bold rounded-lg">Service</span>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4 group-hover:text-orange-600 transition-colors">오늘 뭐 먹지
+                                (Heart Food)</h4>
+                            <p class="text-slate-600 mb-8 leading-relaxed">메뉴 선택의 고민을 해결해주는 음식 추천 서비스입니다. 직관적인 UX를 통해
+                                일상의 소소한 행복을 전달합니다.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#JavaScript</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#UX/UI</span>
+                            </div>
+                        </div>
+                        <div
+                            class="px-10 py-6 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                            <a href="https://heart-food.netlify.app/" target="_blank"
+                                class="text-indigo-600 font-bold flex items-center hover:underline text-sm">
+                                서비스 방문 <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: 말씀 구절 생성기 -->
+                    <article
+                        class="project-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-slate-200 flex flex-col group">
+                        <div class="p-10 flex-grow">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="p-4 bg-blue-50 rounded-2xl group-hover:bg-blue-100 transition-colors">
+                                    <i data-lucide="book-open" class="w-7 h-7 text-blue-500"></i>
+                                </div>
+                                <span
+                                    class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-lg">Utility</span>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors">말씀 구절 생성기
+                                (Bible QT)</h4>
+                            <p class="text-slate-600 mb-8 leading-relaxed">매일 새로운 성경 구절과 묵상을 제공하여 영적 성장을 돕는 도구입니다. 신앙
+                                생활의 디지털 동반자 역할을 수행합니다.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#AI</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#Spiritual</span>
+                            </div>
+                        </div>
+                        <div
+                            class="px-10 py-6 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                            <a href="https://bible-qt-generator.netlify.app/" target="_blank"
+                                class="text-indigo-600 font-bold flex items-center hover:underline text-sm">
+                                서비스 방문 <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: 선박 관리 센터 (교육/코칭 하이브리드) -->
+                    <article
+                        class="project-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-slate-200 flex flex-col group">
+                        <div class="p-10 flex-grow">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="p-4 bg-indigo-50 rounded-2xl group-hover:bg-indigo-100 transition-colors">
+                                    <i data-lucide="graduation-cap" class="w-7 h-7 text-indigo-600"></i>
+                                </div>
+                                <span
+                                    class="px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold rounded-lg">EdTech</span>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4 group-hover:text-indigo-600 transition-colors">코칭 & 교육
+                                플랫폼</h4>
+                            <p class="text-slate-600 mb-8 leading-relaxed">학생의 교육 및 코칭을 위한 하이브리드 플랫폼입니다. 체계적인 커리큘럼
+                                관리와 실시간 코칭 기능을 제공합니다.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#Coaching</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#LMS</span>
+                            </div>
+                        </div>
+                        <div
+                            class="px-10 py-6 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                            <a href="https://shipcenter.netlify.app/" target="_blank"
+                                class="text-indigo-600 font-bold flex items-center hover:underline text-sm">
+                                서비스 방문 <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Project 5: TodoList 플랫폼 -->
+                    <article
+                        class="project-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-slate-200 flex flex-col group">
+                        <div class="p-10 flex-grow">
+                            <div class="flex items-center justify-between mb-8">
+                                <div class="p-4 bg-indigo-50 rounded-2xl group-hover:bg-indigo-100 transition-colors">
+                                    <i data-lucide="book-open" class="w-7 h-7 text-blue-500"></i>
+                                </div>
+                                <span
+                                    class="px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold rounded-lg">TodoList</span>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-4 group-hover:text-indigo-600 transition-colors">TodoList
+                                플랫폼</h4>
+                            <p class="text-slate-600 mb-8 leading-relaxed">TodoList 앱은 사용자가 일상적인 일정을 관리하고, 목표를 달성하기 위한
+                                앱입니다.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#React</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 text-slate-500 text-xs rounded-lg border border-slate-200">#Capacitor</span>
+                            </div>
+                        </div>
+                        <div
+                            class="px-10 py-6 bg-slate-50/50 border-t border-slate-100 flex justify-between items-center">
+                            <a href="https://play.google.com/store/apps/details?id=com.siru.todoList" target="_blank"
+                                class="text-indigo-600 font-bold flex items-center hover:underline text-sm">
+                                서비스 방문 <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 px-4 text-center">
+            <div class="max-w-4xl mx-auto bg-slate-900 rounded-[3rem] p-16 text-white relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-indigo-600 rounded-full blur-[100px] opacity-20">
+                </div>
+                <h3 class="text-4xl font-bold mb-6">새로운 가치를 함께 만듭니다.</h3>
+                <p class="text-slate-400 mb-12 text-lg max-w-xl mx-auto">
+                    AI의 속도보다 깊이 있는 체득을 지향합니다. 데이터 기반의 정교한 분석에 교육과 코칭의 인간적 가치를 더한
+                    '하이브리드 솔루션'으로, 조직의 지속 가능한 성장을 <br /> 설계하겠습니다. 언제든
+                    <a href="mailto:dlworjs21@naver.com">dlworjs21@naver.com</a>
+                    으로 문의 주세요.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="mailto:dlworjs21@naver.com"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-2xl font-bold flex items-center transition-all transform hover:-translate-y-1">
+                        <i data-lucide="mail" class="mr-2 w-5 h-5"></i> 프로젝트 문의하기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-200 text-center text-slate-400 bg-white italic">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="font-medium text-sm">© 2026 Lee Jaegeon. Crafted with Insight & Warmth.</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Initialize -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
